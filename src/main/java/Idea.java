@@ -13,10 +13,11 @@ public class Idea {
     }
 
     public int createIdeas(int time, int count){
+        int result_time=time;
          if (count>=0){
-             time++;
+             result_time++;
          }
-         return time;
+         return result_time;
     }
 
 }
