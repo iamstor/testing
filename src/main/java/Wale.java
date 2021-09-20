@@ -41,12 +41,12 @@ public class Wale {
         for (NaturePosition pos : NaturePosition.values()) {
             if (p == NaturePosition.values().toString()) {
                 b = true;
-                this.time.v++;
+                this.time.time_value++;
             }
 
             else{
                 b = false;
-            this.time.v--;
+            this.time.time_value--;
             }
         }
         if (b=true) {
@@ -58,12 +58,11 @@ public class Wale {
     }
     public void think(){
         System.out.println(this.name + " думает, что он несчастный");
-        this.time.v--;
+        this.time.time_value--;
 
     }
     public String toBeOrNot() {
-        int aloha=this.time.v;
-        if (aloha <= 0) {
+        if (this.time.time_value <= 0) {
             return name + "не является китом";
         } else return name + " уверен, что он кит";
     }

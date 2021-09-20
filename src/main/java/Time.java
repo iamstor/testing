@@ -1,13 +1,11 @@
 public class Time {
 
-    public int v;
+    public int time_value;
     public String description;
-    public String person;
-    public String personName;
-    public String personAge;
 
-    public Time(int v) {
-        this.v = v;
+
+    public Time(int time_value) {
+        this.time_value = time_value;
 
     }
 
@@ -23,9 +21,9 @@ public class Time {
     }
 
     public int getValue() {
-        return v;
+        return time_value;
     }
     public void setValue(int value){
-        this.v = v;
+        this.time_value = time_value;
     }
 }
